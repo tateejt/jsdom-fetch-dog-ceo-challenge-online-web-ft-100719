@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function(){
   loadBreedOptions();
 });
 
-function loadImages(dogPicUrl) {
+function loadImages() {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
-  .then(res=> res.json())
-  .then(results => {
-    results.message.forEach(image => addImage(image))
-  });
+    .then(res=> res.json())
+    .then(results => {
+      results.message.forEach(image => addImage(image))
+    });
 }
 
-function a
+function addImage(dogPicUrl) {
+  let container
+}
