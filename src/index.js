@@ -6,5 +6,11 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function addImage(dogPicUrl) {
-  const imgUrl = ""
+  const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
+  fetch(imgUrl)
+  .then(res=> res.json())
+  .then(results => {
+    results.message.forEach(image => addImage(image))
+  });
 }
+
