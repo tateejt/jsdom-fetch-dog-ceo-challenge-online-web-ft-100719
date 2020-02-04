@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function addImage(dogPicUrl) {
-  let
+  const imgUrl = ""
 }
