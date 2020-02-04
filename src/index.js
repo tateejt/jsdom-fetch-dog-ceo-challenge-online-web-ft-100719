@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
   loadBreedOptions();
 });
 
-function addImage(dogPicUrl) {
+function loadImages(dogPicUrl) {
   const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
   fetch(imgUrl)
   .then(res=> res.json())
@@ -14,3 +14,4 @@ function addImage(dogPicUrl) {
   });
 }
 
+function a
